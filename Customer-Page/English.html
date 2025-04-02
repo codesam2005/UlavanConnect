@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulavan Connect - Fresh from Tamil Nadu Farms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-circle">UC</div>
+                <div class="logo-text">Ulavan Connect</div>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for fresh produce...">
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-icons">
+                <div class="nav-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-badge">3</div>
+                </div>
+                <button class="translate" onclick="switchLanguage()">Tamil</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <div class="container">
+            <div class="scroll-arrow left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="categories">
+                <div class="category-item active">All Products</div>
+                <div class="category-item">Seasonal Veggies</div>
+                <div class="category-item">Fresh Fruits</div>
+                <div class="category-item">Organic Products</div>
+                <div class="category-item">Grains & Pulses</div>
+                <div class="category-item">Dairy Products</div>
+                <div class="category-item">Farmer's Specials</div>
+                <div class="category-item">Herbs & Spices</div>
+                <div class="category-item">Homemade Products</div>
+            </div>
+            <div class="scroll-arrow right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fresh produce from Tamil Nadu farms" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh from Tamil Nadu Farms</h1>
+                <p class="hero-text">Directly connecting you with local farmers for the freshest, most authentic farm produce. No middlemen, just pure quality straight from the soil.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Shop Fresh Today</a>
+                    <a href="#" class="btn btn-secondary">Meet Our Farmers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Today's Fresh Picks -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Today's Fresh Picks</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Organic Tomatoes" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Tomatoes</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Ramesh</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹45/kg</span>
+                            <span class="original-price">₹60/kg</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary buy-now-btn" 
+                            data-name="Organic Tomatoes" 
+                            data-price="45" 
+                            data-unit="kg" 
+                            data-image="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            Buy Now
+                            </button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Fresh Bananas" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Bananas</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Lakshmi</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹30/dozen</span>
+                            <span class="original-price">₹40/dozen</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <!-- In your product cards, modify the Buy Now buttons like this: -->
+                                <button class="btn btn-primary buy-now-btn" 
+                                data-name="Organic Tomatoes" 
+                                data-price="45" 
+                                data-unit="kg" 
+                                data-image="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                                Buy Now
+                                </button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Carrots" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Carrots</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Murugan</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹55/kg</span>
+                            <span class="original-price">₹70/kg</span>
+                            <span class="discount">21% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                                                        <button class="btn btn-primary buy-now-btn" 
+                            data-name="Organic Tomatoes" 
+                            data-price="45" 
+                            data-unit="kg" 
+                            data-image="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            Buy Now
+                            </button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Okra" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Okra (Vendakkai)</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Geetha</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹65/kg</span>
+                            <span class="original-price">₹80/kg</span>
+                            <span class="discount">19% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary buy-now-btn" 
+                            data-name="Organic Tomatoes" 
+                            data-price="45" 
+                            data-unit="kg" 
+                            data-image="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            Buy Now
+                            </button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Promotional Banner -->
+    <div class="container">
+        <div class="promo-banner">
+            <div class="promo-content">
+                <div class="promo-badge">Limited Time Offer</div>
+                <h3 class="promo-title">Organic Mango Season is Here!</h3>
+                <p class="promo-text">Enjoy our famous Alphonso mangoes directly from Tamil Nadu farms. Limited stock available at special prices for our loyal customers.</p>
+                <a href="#" class="btn btn-accent">Shop Mangoes Now</a>
+            </div>
+            <div class="promo-image" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');"></div>
+        </div>
+    </div>
+    
+    <!-- Organic Selections -->
+    <section class="product-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Organic Selections</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Organic Rice" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Ponni Rice</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Karthik</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹95/kg</span>
+                            <span class="original-price">₹120/kg</span>
+                            <span class="discount">21% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Organic Milk" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Cow Milk</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Senthil</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹60/liter</span>
+                            <span class="original-price">₹75/liter</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Organic Honey" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Wild Honey</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Meena</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹350/500g</span>
+                            <span class="original-price">₹450/500g</span>
+                            <span class="discount">22% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Organic Eggs" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Organic Free-range Eggs</h3>
+                        <div class="product-farmer">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Farmer" class="farmer-avatar">
+                            <span>Farmer Raju</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹120/dozen</span>
+                            <span class="original-price">₹150/dozen</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Farmer Spotlight -->
+    <div class="container">
+        <div class="farmer-spotlight">
+            <div class="farmer-header">
+                <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Featured Farmer" class="farmer-avatar-large">
+                <div class="farmer-info">
+                    <h3>Farmer Prakash</h3>
+                    <p>Organic Vegetable Grower, Coimbatore</p>
+                    <div class="farmer-stats">
+                        <span class="farmer-stat">15+ years farming</span>
+                        <span class="farmer-stat">4.8/5 rating</span>
+                        <span class="farmer-stat">500+ happy customers</span>
+                    </div>
+                </div>
+            </div>
+            
+            <blockquote class="farmer-quote">
+                "I believe in growing food the way nature intended - without chemicals. Through Ulavan Connect, I can share my harvest directly with families who appreciate truly organic produce."
+            </blockquote>
+            
+            <a href="#" class="btn btn-primary">Visit Farm Profile</a>
+            
+            <h4 style="margin: 30px 0 20px;">Prakash's Fresh Picks</h4>
+            
+            <div class="farmer-products">
+                <!-- Mini Product 1 -->
+                <div class="mini-product">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Brinjal" class="mini-product-image">
+                    <div class="mini-product-info">
+                        <div class="mini-product-name">Organic Brinjal</div>
+                        <div class="mini-product-price">₹40/kg</div>
+                    </div>
+                </div>
+                
+                <!-- Mini Product 2 -->
+                <div class="mini-product">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Cucumber" class="mini-product-image">
+                    <div class="mini-product-info">
+                        <div class="mini-product-name">Organic Cucumber</div>
+                        <div class="mini-product-price">₹35/kg</div>
+                    </div>
+                </div>
+                
+                <!-- Mini Product 3 -->
+                <div class="mini-product">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Beans" class="mini-product-image">
+                    <div class="mini-product-info">
+                        <div class="mini-product-name">Organic Green Beans</div>
+                        <div class="mini-product-price">₹65/kg</div>
+                    </div>
+                </div>
+                
+                <!-- Mini Product 4 -->
+                <div class="mini-product">
+                    <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Pumpkin" class="mini-product-image">
+                    <div class="mini-product-info">
+                        <div class="mini-product-name">Organic Pumpkin</div>
+                        <div class="mini-product-price">₹30/kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Mission & Values</a></li>
+                        <li><a href="#">Farmers Network</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>For Farmers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Join Our Network</a></li>
+                        <li><a href="#">Farmer Resources</a></li>
+                        <li><a href="#">Training Programs</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Market Insights</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Seasonal Guide</a></li>
+                        <li><a href="#">Farm Visits</a></li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Ulavan Connect. All rights reserved. Fresh from Tamil Nadu farms to your home.
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Bubble -->
+    <div class="chat-bubble">
+        <div class="chat-btn">
+            <i class="fas fa-comment"></i>
+        </div>
+        <div class="chat-window">
+            <div class="chat-header">
+                <h4>Need Help?</h4>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message">
+                    <div class="bot-message">Hello! How can we help you today?</div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
