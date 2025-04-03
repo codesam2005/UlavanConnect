@@ -44,6 +44,9 @@
         function switchLanguage() {
             window.location.href = "Tamil.html"; // Redirect to English page
         }
+        function switchLanguage2() {
+            window.location.href = "English.html"; // Redirect to English page
+        }
         document.querySelectorAll('.buy-now-btn').forEach(button => {
             button.addEventListener('click', function() {
                 // Get product details from data attributes
@@ -59,7 +62,7 @@
                 sessionStorage.setItem('productImage', productImage);
                 
                 // Redirect to payment page
-                window.location.href = 'pay.html';
+                window.location.href = '/payment/pay.html';
             });
         });
         
