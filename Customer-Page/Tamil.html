@@ -13,12 +13,12 @@
         <div class="container header-container">
             <div class="logo">
                 <div class="logo-circle">UC</div>
-                <div class="logo-text">உழவன் கனெக்ட்</div>
+                <div class="logo-text">Ulavan Connect</div>
             </div>
             
             <div class="search-bar">
                 <i class="fas fa-search"></i>
-                <input type="text" placeholder="புதிய உற்பத்திகளை தேடு...">
+                <input type="text" placeholder="Search for fresh produce...">
             </div>
             
             <button class="mobile-menu-btn">
@@ -29,9 +29,10 @@
                 <div class="nav-icon">
                     <i class="fas fa-user"></i>
                 </div>
-                <div class="nav-icon">
+                <a href="available.html" class="nav-icon nearby-btn">
                     <i class="fas fa-map-marker-alt"></i>
-                </div>
+                    <span>Nearby</span>
+                </a>
                 <div class="nav-icon">
                     <i class="fas fa-shopping-cart"></i>
                     <div class="cart-badge">3</div>
@@ -39,7 +40,7 @@
                 <button class="translate" onclick="switchLanguage2()">English</button>
             </div>
         </div>
-    </header>
+    </header> 
     
     <!-- Category Navigation -->
     <div class="category-nav">
@@ -207,19 +208,82 @@
         </div>
     </section>
     
-    <!-- Promotional Banner -->
+   <!-- Seasonal Insights Scroll -->
+   <section class="seasonal-insights">
     <div class="container">
-        <div class="promo-banner">
-            <div class="promo-content">
-                <div class="promo-badge">வரையறுக்கப்பட்ட நேர சலுகை</div>
-                <h3 class="promo-title">கரிம மாங்கனி பருவம் வந்துவிட்டது!</h3>
-                <p class="promo-text">தமிழ்நாட்டு தோட்டங்களிலிருந்து நேரடியாக எங்கள் பிரபலமான அல்போன்சோ மாங்கனிகளை அனுபவிக்கவும். எங்கள் விசுவாசமான வாடிக்கையாளர்களுக்கு சிறப்பு விலையில் வரையறுக்கப்பட்ட பங்கு மட்டுமே உள்ளது.</p>
-                <a href="#" class="btn btn-accent">இப்போது மாங்கனிகள் வாங்கவும்</a>
+        <div class="section-header">
+            <h2 class="section-title">தமிழ்நாடு பருவகால அறுவடை</h2>
+            <p class="section-subtitle">எங்கள் பண்ணைகளில் இருந்து நேரடியாக உங்கள் வீடு வரை</p>
+        </div>
+        
+        <div class="insights-scroll-container">
+            <div class="insights-track">
+                <!-- Insight Card 1 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/mango.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>மாம்பழ காலம்</h3>
+                        <div class="season-tag">ஏப்ரல் - ஜூன்</div>
+                        <p>மதுரை தோட்டங்களில் முதிர்ச்சியடைந்த அல்போன்சோ மற்றும் பங்கனப்பள்ளி வகைகள்.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> பண்ணை புதிய</span>
+                            <span><i class="fas fa-truck"></i> நேரடி விநியோகம்</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 2 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/Brinjal.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>கத்தரிக்காய் அறுவடை</h3>
+                        <div class="season-tag">ஜூன் - செப்டம்பர்</div>
+                        <p>கோயம்புத்தூரில் இரசாயனம் இல்லாமல் வளர்க்கப்படும் காட்டு கத்தரி வகை.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> பண்ணை புதிய</span>
+                            <span><i class="fas fa-truck"></i> நேரடி விநியோகம்</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 3 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/nendaraBanana.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>நெந்திரம் வாழை</h3>
+                        <div class="season-tag">ஆண்டு முழுவதும்</div>
+                        <p>திருச்சியில் வளர்க்கப்படும், சமையலுக்கும் சிற்றுண்டிகளுக்கும் சிறந்தது.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> பண்ணை புதிய</span>
+                            <span><i class="fas fa-truck"></i> நேரடி விநியோகம்</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 4 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/tomato.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>இட்லி தக்காளி</h3>
+                        <div class="season-tag">நவம்பர் - பிப்ரவரி</div>
+                        <p>கிருஷ்ணகிரியில் வளர்க்கப்படும், ரசம் செய்ய சிறந்த கூடுதல் சுவை.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> பண்ணை புதிய</span>
+                            <span><i class="fas fa-truck"></i> நேரடி விநியோகம்</span>
+                        </div>
+                    </div>
+                </div>
+              
+                
             </div>
-            <div class="promo-image" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');"></div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">இன்றே புதிய பொருட்களை வாங்கவும்</a>
+            <a href="#" class="btn btn-secondary">எங்கள் விவசாயிகளை சந்திக்கவும்</a>
         </div>
     </div>
-    
+</section>
     <!-- Organic Selections -->
     <section class="product-section">
         <div class="container">
@@ -232,7 +296,7 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image-container">
-                        <img src="images/ponni.jpeg" alt="கரிம அரிசி" class="product-image">
+                        <img src="/images/ponni.jpeg" alt="கரிம அரிசி" class="product-image">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">கரிம பொன்னி அரிசி</h3>
@@ -250,7 +314,7 @@
                             data-name="கரிம பொன்னி அரிசி" 
                             data-price="95" 
                             data-unit="kg" 
-                            data-image="images/ponni.jpeg">
+                            data-image="/images/ponni.jpeg">
                             இப்போது வாங்க
                             </button>
                             <button class="btn btn-secondary">கார்ட்டில் சேர்</button>
@@ -258,6 +322,7 @@
                     </div>
                 </div>
                 
+
                 <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-image-container">

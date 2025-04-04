@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const plusBtn = document.querySelector('.quantity-btn.plus');
     const paymentButton = document.getElementById('rzp-button1');
 
+    
     // Get product details from sessionStorage
     const productName = sessionStorage.getItem('productName');
     const productPrice = sessionStorage.getItem('productPrice');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productImage = sessionStorage.getItem('productImage');
 
     // Display product details
+    
     productNameElement.textContent = productName;
     productPriceElement.textContent = `₹${productPrice}/${productUnit}`;
     productImageElement.src = productImage;

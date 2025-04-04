@@ -30,9 +30,10 @@
                 <div class="nav-icon">
                     <i class="fas fa-user"></i>
                 </div>
-                <div class="nav-icon">
+                <a href="available.html" class="nav-icon nearby-btn">
                     <i class="fas fa-map-marker-alt"></i>
-                </div>
+                    <span>Nearby</span>
+                </a>
                 <div class="nav-icon">
                     <i class="fas fa-shopping-cart"></i>
                     <div class="cart-badge">3</div>
@@ -40,7 +41,7 @@
                 <button class="translate" onclick="switchLanguage()">Tamil</button>
             </div>
         </div>
-    </header>
+    </header> 
     
     <!-- Category Navigation -->
     <div class="category-nav">
@@ -209,18 +210,82 @@
         </div>
     </section>
     
-    <!-- Promotional Banner -->
+  
+<!-- Seasonal Insights Scroll -->
+<section class="seasonal-insights">
     <div class="container">
-        <div class="promo-banner">
-            <div class="promo-content">
-                <div class="promo-badge">Limited Time Offer</div>
-                <h3 class="promo-title">Organic Mango Season is Here!</h3>
-                <p class="promo-text">Enjoy our famous Alphonso mangoes directly from Tamil Nadu farms. Limited stock available at special prices for our loyal customers.</p>
-                <a href="#" class="btn btn-accent">Shop Mangoes Now</a>
+        <div class="section-header">
+            <h2 class="section-title">Tamil Nadu Seasonal Harvest</h2>
+            <p class="section-subtitle">Direct from our farms to your home</p>
+        </div>
+        
+        <div class="insights-scroll-container">
+            <div class="insights-track">
+                <!-- Insight Card 1 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/mango.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>Mango Season</h3>
+                        <div class="season-tag">April - June</div>
+                        <p>Our Alphonso and Banganapalli varieties are hand-picked at peak ripeness from Madurai orchards.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> Farm Fresh</span>
+                            <span><i class="fas fa-truck"></i> Direct Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 2 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/Brinjal.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>Brinjal Harvest</h3>
+                        <div class="season-tag">June - September</div>
+                        <p>Traditional Kattu Kathiri variety grown without chemicals in Coimbatore.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> Farm Fresh</span>
+                            <span><i class="fas fa-truck"></i> Direct Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 3 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/nendaraBanana.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>Nendran Bananas</h3>
+                        <div class="season-tag">Year-Round</div>
+                        <p>Grown in Tiruchirapalli, perfect for cooking and snacks.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> Farm Fresh</span>
+                            <span><i class="fas fa-truck"></i> Direct Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insight Card 4 -->
+                <div class="insight-card">
+                    <div class="insight-image" style="background-image: url('/images/tomato.jpeg');"></div>
+                    <div class="insight-content">
+                        <h3>Local Tomatoes</h3>
+                        <div class="season-tag">Nov - Feb</div>
+                        <p>Intense flavor perfect for rasam, grown in Krishnagiri.</p>
+                        <div class="insight-stats">
+                            <span><i class="fas fa-leaf"></i> Farm Fresh</span>
+                            <span><i class="fas fa-truck"></i> Direct Delivery</span>
+                        </div>
+                    </div>
+                </div>
+              
             </div>
-            <div class="promo-image" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80');"></div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Shop Fresh Today</a>
+            <a href="#" class="btn btn-secondary">Meet Our Farmers</a>
         </div>
     </div>
+</section>
     
     <!-- Organic Selections -->
     <section class="product-section">
@@ -234,7 +299,7 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-image-container">
-                        <img src="images/ponni.jpeg" alt="Organic Rice" class="product-image">
+                        <img src="/images/ponni.jpeg" alt="Organic Rice" class="product-image">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Organic Ponni Rice</h3>
@@ -252,7 +317,7 @@
                             data-name="Organic Ponni Rice" 
                             data-price="95" 
                             data-unit="kg" 
-                            data-image="images/ponni.jpeg">
+                            data-image="/images/ponni.jpeg">
                             Buy Now
                             </button>
                             <button class="btn btn-secondary">Add to Cart</button>
